@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    tools:context=".SegundaTela">
+
+    <TextView
+        android:id="@+id/numerosGeradosTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Nenhum número gerado!"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/gerarNumerosBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/copiarBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/fundo_iniciar_bnt"
+        android:text="Gerar Números"
+        android:textSize="18dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/copiarBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/limparBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/fundo_iniciar_bnt"
+        android:enabled="false"
+        android:text="Copiar"
+        android:textColor="@color/fundo"
+        android:textSize="18dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/limparBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/voltarBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/fundo_limpar_bnt"
+        android:textSize="18dp"
+        android:textColor="@color/fundo"
+        android:text="Limpar Números"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/voltarBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/fundo_fechar_bnt"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:text="Voltar"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
